@@ -93,3 +93,31 @@ function initAnimations() {
         type();
     }
 }
+function copiarTexto(event, texto, botao) {
+    event.preventDefault();
+    event.stopPropagation();
+
+    navigator.clipboard.writeText(texto);
+
+    botao.innerHTML = '<i class="fas fa-check"></i>';
+
+    mostrarToast("Copiado para a área de transferência!");
+
+    setTimeout(() => {
+        botao.innerHTML = '<i class="fas fa-copy"></i>';
+    }, 2000);
+}
+
+function mostrarToast(mensagem) {
+    const toast = document.getElementById("copy-toast");
+
+    toast.querySelector("span").textContent = mensagem;
+
+    toast.classList.add("show");
+
+    clearTimeout(window.toastTimeout);
+
+    window.toastTimeout = setTimeout(() => {
+        toast.classList.remove("show");
+    }, 2500);
+}
