@@ -18,10 +18,7 @@
   <!-- CSS Principal -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<div id="copy-toast" class="copy-toast">
-    <i class="fas fa-check-circle"></i>
-    <span>Copiado para a área de transferência!</span>
-</div>
+
 <body>
   <!-- Header / Navegação -->
   <header>
@@ -445,68 +442,56 @@
           <div class="contact-links">
 
             <a href="mailto:kaick.braga@gmail.com" class="contact-item">
-    <i class="fas fa-envelope"></i>
+              <i class="fas fa-envelope"></i>
 
-    <div>
-        <strong>E-mail</strong>
-        <span>kaick.braga@gmail.com</span>
-    </div>
+              <div>
+                <strong>E-mail</strong>
+                <span>kaick.braga@gmail.com</span>
+              </div>
 
-    <button
-        class="copy-btn"
-        onclick="copiarTexto(event, 'kaick.braga@gmail.com', this)"
-    >
-        <i class="fas fa-copy"></i>
-    </button>
-</a>
+              <button class="copy-btn" onclick="copiarTexto(event, 'kaick.braga@gmail.com', this)">
+                <i class="fas fa-copy"></i>
+              </button>
+            </a>
 
-<a href="https://wa.me/5511975737251" target="_blank" class="contact-item">
-    <i class="fab fa-whatsapp"></i>
+            <a href="https://wa.me/5511975737251" target="_blank" class="contact-item">
+              <i class="fab fa-whatsapp"></i>
 
-    <div>
-        <strong>WhatsApp</strong>
-        <span>(11) 97573-7251</span>
-    </div>
+              <div>
+                <strong>WhatsApp</strong>
+                <span>(11) 97573-7251</span>
+              </div>
 
-    <button
-        class="copy-btn"
-        onclick="copiarTexto(event, '11975737251', this)"
-    >
-        <i class="fas fa-copy"></i>
-    </button>
-</a>
+              <button class="copy-btn" onclick="copiarTexto(event, '11975737251', this)">
+                <i class="fas fa-copy"></i>
+              </button>
+            </a>
 
-<a href="https://github.com/kaickBB" target="_blank" class="contact-item">
-    <i class="fab fa-github"></i>
+            <a href="https://github.com/kaickBB" target="_blank" class="contact-item">
+              <i class="fab fa-github"></i>
 
-    <div>
-        <strong>GitHub</strong>
-        <span>github.com/kaickBB</span>
-    </div>
+              <div>
+                <strong>GitHub</strong>
+                <span>github.com/kaickBB</span>
+              </div>
 
-    <button
-        class="copy-btn"
-        onclick="copiarTexto(event, 'https://github.com/kaickBB', this)"
-    >
-        <i class="fas fa-copy"></i>
-    </button>
-</a>
+              <button class="copy-btn" onclick="copiarTexto(event, 'https://github.com/kaickBB', this)">
+                <i class="fas fa-copy"></i>
+              </button>
+            </a>
 
-<a href="https://maps.google.com/?q=06714260" target="_blank" class="contact-item">
-    <i class="fas fa-map-marker-alt"></i>
+            <a href="https://maps.google.com/?q=06714260" target="_blank" class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
 
-    <div>
-        <strong>Localização</strong>
-        <span>São Paulo - SP, Brasil</span>
-    </div>
+              <div>
+                <strong>Localização</strong>
+                <span>São Paulo - SP, Brasil</span>
+              </div>
 
-    <button
-        class="copy-btn"
-        onclick="copiarTexto(event, 'São Paulo - SP, Brasil - CEP 06714260', this)"
-    >
-        <i class="fas fa-copy"></i>
-    </button>
-</a>
+              <button class="copy-btn" onclick="copiarTexto(event, 'São Paulo - SP, Brasil - CEP 06714260', this)">
+                <i class="fas fa-copy"></i>
+              </button>
+            </a>
 
           </div>
         </div>
@@ -520,7 +505,11 @@
       <p>&copy; 2026 Kaick Batista Braga.</p>
     </div>
   </footer>
-
+  <!-- toast -->
+  <div id="copy-toast" class="copy-toast">
+    <i class="fas fa-check-circle"></i>
+    <span>Copiado para a área de transferência!</span>
+  </div>
   <!-- JavaScript -->
   <script src="js/script.js"></script>
 </body>

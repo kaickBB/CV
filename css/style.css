@@ -1127,7 +1127,36 @@ footer a {
     grid-template-columns: 1fr;
   }
 }
+/* responsivo */
+@media (max-width: 768px) {
 
+  .certificates-grid {
+    gap: 1rem;
+  }
+
+  .certificate-card {
+    padding: 1rem;
+  }
+
+  .certificate-link-wrapper {
+    display: flex !important;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .certificate-icon {
+    margin: 0;
+    flex-shrink: 0;
+  }
+
+  .certificate-card h3 {
+    margin-bottom: 0.25rem;
+  }
+
+  .certificate-link {
+    margin-top: 0;
+  }
+}
 @media (max-width: 480px) {
   .container {
     padding: 0 1rem;
