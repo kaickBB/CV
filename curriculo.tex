@@ -1,0 +1,191 @@
+\documentclass[10.5pt,a4paper]{article}
+
+% ---------- CODIFICAÇÃO E IDIOMA ----------
+\usepackage[utf8]{inputenc}     
+\usepackage[T1]{fontenc}         
+\usepackage[brazilian]{babel}    
+
+% ---------- FONTE E ESPAÇAMENTO ----------
+\usepackage{lmodern}             
+\usepackage[scaled]{helvet}      
+\renewcommand{\familydefault}{\sfdefault}
+
+% ---------- LAYOUT DA PÁGINA ----------
+\usepackage[a4paper, top=1cm, bottom=1.1cm, left=1.1cm, right=1.1cm]{geometry}
+\usepackage{paracol}             
+\usepackage{xcolor}             
+\usepackage{titlesec}           
+\usepackage{enumitem}            
+\usepackage{fontawesome5}        
+\usepackage{hyperref}            
+\usepackage{tabularx}            
+\usepackage{ragged2e}            
+
+% ---------- CORES ----------
+\definecolor{corprincipal}{HTML}{1F4E5F}   
+\definecolor{corsecundaria}{HTML}{4A4A4A}  
+\definecolor{corfundo}{HTML}{F2F4F5}      
+
+% ---------- CONFIGURAÇÃO DE LINKS ----------
+\hypersetup{
+    colorlinks=true,
+    linkcolor=corprincipal,
+    urlcolor=corprincipal,
+}
+
+% ---------- ESTILO DOS TÍTULOS DE SEÇÃO ----------
+\titleformat{\section}
+  {\large\bfseries\color{corprincipal}}
+  {}{0em}{}
+  [\vspace{-0.3em}{\color{corprincipal}\titlerule[1pt]}]
+\titlespacing*{\section}{0pt}{*1.2}{*0.8}
+
+\titleformat{\subsection}
+  {\bfseries\color{corsecundaria}}
+  {}{0em}{}
+\titlespacing*{\subsection}{0pt}{*0.6}{*0.2}
+
+% ---------- REMOVER NUMERAÇÃO DE PÁGINA ----------
+\pagestyle{empty}
+
+% ---------- COMANDOS AUXILIARES ----------
+\newcommand{\itemExperiencia}[4]{%
+  \subsection*{#1}
+  {\small\color{corsecundaria}\textit{#2} \hfill #3}\\[0.15em]
+  {\small #4}
+  \vspace{0.5em}
+}
+
+\newcommand{\contatoLinha}[3]{%
+  \mbox{\small\color{corprincipal}#1}\hspace{0.4em}{\small #2}\\[0.35em]%
+}
+
+\newcommand{\blocoHabilidade}[2]{%
+  {\small\bfseries\color{corsecundaria} #1}\\[0.1em]
+  {\small #2}\par\vspace{0.5em}
+}
+
+\setlength{\columnsep}{0.8cm}
+
+\begin{document}
+
+\begin{center}
+  {\Huge\bfseries\color{corprincipal} Kaick Batista Braga}\\[0.3em]
+  {\large\color{corsecundaria} Estudante de Análise e Desenvolvimento de Sistemas}\\[0.4em]
+  {\small\itshape\color{corsecundaria}
+    Em busca de oportunidade de estágio ou posição inicial na área de Tecnologia,
+    visando aplicar e expandir conhecimentos técnicos.}
+\end{center}
+
+\vspace{0.3em}
+{\color{corprincipal}\hrule height 1.2pt}
+\vspace{0.6em}
+
+% DUAS COLUNAS
+\begin{paracol}{2}
+\setcolumnwidth{0.34\textwidth, 0.62\textwidth}
+
+% COLUNA ESQUERDA 
+\sloppy
+\section*{Contato}
+  {\small\itshape\color{corsecundaria}
+   clique para interagir}\\
+\contatoLinha{\faEnvelope}{\href{mailto:kaick.braga@gmail.com}{kaick.braga@gmail.com}}{}
+\contatoLinha{\faWhatsapp}{\href{https://wa.me/5511975737251}{(11) 97573-7251}}{}
+\contatoLinha{\faGithub}{\href{https://github.com/kaickBB}{github.com/kaickBB}}{}
+\contatoLinha{\faGlobe}{\href{https://kaickbb.github.io/CV/}{kaickbb.github.io/CV}}{}
+\section*{Dados Pessoais}
+  {\small\itshape\color{corsecundaria}
+   clique no endereço para abri-lo}\\
+\contatoLinha{\faMapMarker}{\href{https://maps.app.goo.gl/oNDkcKv5mDHWCDrj8}{Cotia - SP | Parque Alexandre | R. Nícola Perone}}{}
+{\small Nascimento: 01/05/2006}\\
+{\small Disponível para oportunidades}
+
+\section*{Habilidades Técnicas}
+
+\blocoHabilidade{Linguagens}{Python, C/C++, JavaScript, HTML/CSS, PHP, SQL, VBA, Código G, Código M}
+
+\blocoHabilidade{Softwares}{AutoCAD, SolidWorks, Blender, Pacote Office, ERP TOTVS, Arduino IDE, Photoshop, Krita}
+
+\blocoHabilidade{Máquinas \& Equipamentos}{Microcontroladores, Torno CNC (Siemens Sinumerik), Centro de Usinagem CNC (Mazak Mazatrol / Siemens Sinumerik), Fresadora, Torno Mecânico}
+
+\section*{Áreas de Certificação}
+\begin{itemize}[leftmargin=1.1em, itemsep=0.1em, label=\textcolor{corprincipal}{\small\faAngleRight}]
+  \small
+  \item Desenvolvimento e Tecnologia
+  \item Logística
+  \item Metalurgia
+\end{itemize}
+
+\switchcolumn
+% COLUNA DIREITA
+\section*{Perfil}
+{\small
+Estudante do curso superior de Tecnologia em Análise e Desenvolvimento de Sistemas
+no SENAI Mariano Ferraz. Possui experiência profissional na área de PCP
+(Planejamento e Controle da Produção), com competências em organização de
+processos, controle e análise de dados, resolução de problemas e suporte a
+atividades operacionais.
+
+Concluiu o curso de Aprendizagem Industrial (CAI) voltado para Logística, com
+base sólida em gestão de estoques, planejamento, controle de processos e
+rotinas industriais -- experiência que contribuiu para uma visão analítica,
+atenção aos detalhes e capacidade de trabalho organizado.
+
+Interesse contínuo em programação, modelagem 3D e design 2D. Perfil
+comprometido, organizado e dedicado ao aprendizado contínuo, em busca de
+desafios que permitam adquirir experiência prática e contribuir com os
+objetivos da organização.
+}
+
+\section*{Formação Acadêmica}
+\itemExperiencia{Tecnologia em Análise e Desenvolvimento de Sistemas}
+  {SENAI Mariano Ferraz}{Em andamento}
+  {Curso superior de tecnologia com foco em desenvolvimento de software, lógica de programação e análise de sistemas.}
+
+\itemExperiencia{Curso de Aprendizagem Industrial (CAI) -- Logística}
+  {SENAI}{Concluído}
+  {Formação técnica voltada para gestão de estoques, planejamento, controle de processos e rotinas industriais.}
+
+\section*{Experiência Profissional}
+\itemExperiencia{Auxiliar de PCP (Planejamento e Controle da Produção)}
+  {Área Industrial}{--}
+  {Atuação na organização de processos produtivos, controle e análise de
+  dados, resolução de problemas operacionais e suporte às atividades de
+  planejamento e controle da produção.}
+
+\section*{Certificados}
+  {\small\itshape\color{corsecundaria}
+   clique no certificado para visualiza-lo}
+\subsection*{Desenvolvimento e Tecnologia}
+\begin{itemize}[leftmargin=1.1em, itemsep=0.05em, label=\textcolor{corprincipal}{\small\faAngleRight}]
+  \small
+  \item \href{https://kaickbb.github.io/CV/files/Certificado_Compet%C3%AAnciaTransversalL%C3%B3gicaProgramacao.pdf}{Lógica de Programação -- Competência Transversal}
+  \item \href{https://kaickbb.github.io/CV/files/Certificado_DesenvolvimentoJavaScrip.pdf}{Desenvolvimento em JavaScript}
+  \item \href{https://kaickbb.github.io/CV/files/Certificado_Programa%C3%A7%C3%A3oEmLinguagem%20PHP.pdf}{Programação em Linguagem PHP}
+  \item \href{https://kaickbb.github.io/CV/files/Certificado_EticaInteligenciaArtificia.pdf}{Ética na Inteligência Artificial}
+  \item \href{https://kaickbb.github.io/CV/files/Certificado_PorDentroSeguran%C3%A7aCibern%C3%A9tic.pdf}{Segurança Cibernética}
+  \item \href{https://kaickbb.github.io/CV/files/Certificado_PrivacidadeProte%C3%A7%C3%A3oDadosLGPD.pdf}{Privacidade e Proteção de Dados (LGPD)}
+  \item \href{https://kaickbb.github.io/CV/files/Certificado_Desvendando5.pdf}{Desvendando o 5G}
+\end{itemize}
+
+\subsection*{Logística}
+\begin{itemize}[leftmargin=1.1em, itemsep=0.05em, label=\textcolor{corprincipal}{\small\faAngleRight}]
+  \small
+  \item \href{https://kaickbb.github.io/CV/files/Certificado_ALP.pdf}{Auxiliar de Linha de Produção (ALP)}
+  \item \href{https://kaickbb.github.io/CV/files/Certificado_DesvendandoDescarbonizacao.pdf}{Desvendando a Descarbonização}
+  \item \href{https://kaickbb.github.io/CV/files/Certificado_EconomiaCircula.pdf}{Economia Circular}
+\end{itemize}
+\subsection*{Metalurgia}
+\begin{itemize}[leftmargin=1.1em, itemsep=0.05em, label=\textcolor{corprincipal}{\small\faAngleRight}]
+  \small
+  \item \href{https://kaickbb.github.io/CV/files/Certificado_LeituraInterpretacaoDesenhoTecnicoMecanico.pdf}{Leitura e Interpretação de Desenho Técnico Mecânico}
+  \item \href{https://kaickbb.github.io/CV/files/Certificado_MetrologiaAplicadaMecanica.pdf}{Metrologia Aplicada à Mecânica}
+  \item \href{https://kaickbb.github.io/CV/files/Certificado_PreparacaoOperacaoProgramacaoTornoCNC.pdf}{Preparação, Operação e Programação de Torno CNC}
+  \item \href{https://kaickbb.github.io/CV/files/Certificado_ProgramacaoCentroUsinagemCNC.pdf}{Preparação, Operação e Programação de Centro de Usinagem CNC}
+  \item \href{https://kaickbb.github.io/CV/files/Certificado_TecnologiaCorte.pdf}{Usinagem -- Tecnologia do Corte}
+\end{itemize}
+
+\end{paracol}
+
+\end{document}
